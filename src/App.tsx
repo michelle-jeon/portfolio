@@ -6,7 +6,7 @@ export default function App() {
     <div className="min-h-screen bg-white text-gray-800">
       {/* Header */}
       <header className="p-6 flex justify-between items-center border-b">
-        <h1 className="text-2xl font-bold">포이 | 프론트엔드 개발자</h1>
+        <h1 className="text-2xl font-bold">전미경 | 프론트엔드 개발자</h1>
         <nav className="space-x-4">
           <a href="#home" className="hover:underline">Home</a>
           <a href="#projects" className="hover:underline">Projects</a>
@@ -35,8 +35,8 @@ export default function App() {
               <p className="text-sm text-gray-600">React와 TypeScript를 이용한 급여 계산 웹앱</p>
               <p className="text-sm mt-2">주요 기능: 실시간 계산, PDF 출력</p>
               <div className="mt-4 space-x-2">
-                <a href="https://github.com/yourid/paycalc" className="text-blue-600 underline text-sm">GitHub</a>
-                <a href="https://paycalc.vercel.app" className="text-blue-600 underline text-sm">Demo</a>
+                <a href="https://github.com/michelle-jeon/shrimply-calc-pay" className="text-blue-600 underline text-sm">GitHub</a>
+                <a href="https://shrimply-calc-pay.vercel.app" className="text-blue-600 underline text-sm">Demo</a>
               </div>
             </CardContent>
           </Card>
@@ -47,8 +47,8 @@ export default function App() {
               <p className="text-sm text-gray-600">Next.js 기반의 모임 관리 서비스</p>
               <p className="text-sm mt-2">주요 기능: 모임 일정, 회원 관리</p>
               <div className="mt-4 space-x-2">
-                <a href="https://github.com/yourid/bookclub" className="text-blue-600 underline text-sm">GitHub</a>
-                <a href="https://bookclub.vercel.app" className="text-blue-600 underline text-sm">Demo</a>
+                <a href="https://github.com/michelle-jeon/wonders-home" className="text-blue-600 underline text-sm">GitHub</a>
+                <a href="" className="text-blue-600 underline text-sm">Demo</a>
               </div>
             </CardContent>
           </Card>
