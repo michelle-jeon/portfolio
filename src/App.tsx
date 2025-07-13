@@ -32,7 +32,7 @@ export default function App() {
           <Card>
             <CardContent className="p-4">
               <h3 className="text-xl font-semibold">급여 계산기</h3>
-              <p className="text-sm text-gray-600">Reacyt와 TypeScript를 이용한 급여 계산 웹앱</p>
+              <p className="text-sm text-gray-600">React와 TypeScript를 이용한 급여 계산 웹앱</p>
               <p className="text-sm mt-2">주요 기능: 실시간 계산, PDF 출력</p>
               <div className="mt-4 space-x-2">
                 <a href="https://github.com/yourid/paycalc" className="text-blue-600 underline text-sm">GitHub</a>
