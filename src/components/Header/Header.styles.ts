@@ -9,6 +9,7 @@ export const HeaderWrapper = styled.header`
   justify-content: space-between;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
   position: fixed;
+  z-index:9999;
   background-color: #f8f8f8;
 `;
 
