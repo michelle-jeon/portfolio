@@ -75,3 +75,13 @@ body {
   font-family: 'Sofachrome Rg', sans-serif;
   /* font-style: italic; */
 }
+
+section {
+  width:100%;
+  padding:50px 0;
+}
+
+section .inner {
+  width:1100px;
+  margin:0 auto;
+}
