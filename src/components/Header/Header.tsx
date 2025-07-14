@@ -1,30 +1,31 @@
-import './Header.css'
+import { HeaderWrapper, NavBar, NavItem, Title } from './Header.styles';
 
 type HeaderProps = {
-  onNavChange: (nav:string)=>void;
-  selectedNav:string;
-}
+  onNavChange: (nav: string) => void;
+  selectedNav: string;
+};
 
-export default function Header({onNavChange,selectedNav}:HeaderProps){
+export default function Header({ onNavChange, selectedNav }: HeaderProps) {
   const navigations = [
-    {name:'HOME'},{name:'WORK'},{name:'TOY'},{name:'CONTACT'}
-  ]
+    { name: 'HOME' },
+    { name: 'WORK' },
+    { name: 'TOY' },
+    { name: 'CONTACT' },
+  ];
+
   return (
-    <div className="header">
-      <h1 className="styled_font">
-        MIKYEONG JEON
-      </h1>
-      <div className='nav_bar'>
-        {navigations.map((nav)=>(
-          <div 
-            className="nav" 
+    <HeaderWrapper>
+      <Title className="styled_font">MIKYEONG JEON</Title>
+      <NavBar>
+        {navigations.map((nav) => (
+          <NavItem
             key={nav.name}
-            onClick={()=>onNavChange(nav.name)}
+            onClick={() => onNavChange(nav.name)}
           >
             {nav.name}
-          </div>
+          </NavItem>
         ))}
-      </div>
-    </div>
+      </NavBar>
+    </HeaderWrapper>
   );
-};
+}

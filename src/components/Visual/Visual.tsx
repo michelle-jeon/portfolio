@@ -1,9 +1,9 @@
-import './Visual.css'
+import { VisualWrapper } from './Visual.styles';
 
-export default function Visual (){
- return (
-  <div className="visual">
-    
-  </div>
- ) 
+export default function Visual() {
+  return (
+    <VisualWrapper>
+      {/* 내용 */}
+    </VisualWrapper>
+  );
 }
