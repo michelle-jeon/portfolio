@@ -11,18 +11,14 @@ export const PreviewContainer = styled.div`
   flex:1;
   height: 300px;
   background-color: pink;
-
-  -webkit-mask-image: url('/assets/images/workSectionMaskShow.svg');
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-size: 100% 100%;
-
-  mask-image: url('/assets/images/workSectionMaskShow.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-  mask-size: 100% 100%;
-
+  border-radius:30px;
 `;
+
+export const PreviewMask = styled.img`
+  position:absolute;
+  bottom:0;
+  right:0;
+`
 
 export const DescriptionContainer = styled.div`
   flex:1;
