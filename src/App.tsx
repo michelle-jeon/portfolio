@@ -31,7 +31,7 @@ export default function App() {
         selectedNav={selectedNav}
         onNavChange={setSelectedNav}
       />
-      <section className='' ref={homeRef}>
+      <section className='visualSection' ref={homeRef}>
         <Visual />
       </section>
       {/* about */}

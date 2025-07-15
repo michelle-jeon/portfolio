@@ -76,7 +76,7 @@ body {
   /* font-style: italic; */
 }
 
-section {
+section:not(.visualSection) {
   width:100%;
   padding:50px 0;
 }
