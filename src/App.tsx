@@ -37,7 +37,7 @@ export default function App() {
       {/* about */}
       <section>
         <div className="inner">
-          blabla
+          
         </div>
       </section>
 

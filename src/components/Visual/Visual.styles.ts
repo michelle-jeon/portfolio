@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const VisualWrapper = styled.div`
   height: 200vh;
+  min-height:1000px;
   background-color: #666;
   align-items: center;
   justify-content: center;
@@ -13,8 +14,11 @@ export const VisualWrapper = styled.div`
 export const StickyContainer = styled.div`
   position: sticky;
   top: 0;
+  background-color:pink;
   height: 100vh;
+  min-height: 1000px;
   display: flex;
+  flex-direction:column;
   align-items: center;
   justify-content: center;
   padding-top:100px;
@@ -22,10 +26,11 @@ export const StickyContainer = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-template-rows: repeat(6, 150px);
+  grid-template-columns: repeat(6, minmax(50px, 150px));
+  grid-template-rows: repeat(6, minmax(50px, 150px));
   gap: 0;
   position: relative;
+  background-color:blue;
 `;
 
 interface GridItemProps {
@@ -61,3 +66,13 @@ export const GridItem = styled.div<GridItemProps>`
     white-space: pre-line;
   }
 `;
+
+export const Updated = styled.p`
+  position:absolute;
+  bottom:50px;
+  right:0;
+  padding:15px 30px;
+  border-radius:30px;
+  background-color:gray;
+
+`
