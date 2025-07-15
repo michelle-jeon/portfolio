@@ -14,7 +14,7 @@ export const VisualWrapper = styled.div`
 export const StickyContainer = styled.div`
   position: sticky;
   top: 0;
-  background-color:pink;
+  // background-color:pink;
   height: 100vh;
   min-height: 1000px;
   display: flex;
@@ -26,11 +26,11 @@ export const StickyContainer = styled.div`
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(6, minmax(50px, 150px));
-  grid-template-rows: repeat(6, minmax(50px, 150px));
+  grid-template-columns: repeat(6,150px);
+  grid-template-rows: repeat(6,150px);
   gap: 0;
   position: relative;
-  background-color:blue;
+  // background-color:blue;
 `;
 
 interface GridItemProps {

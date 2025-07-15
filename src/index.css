@@ -69,6 +69,7 @@
 
 body {
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #f8f8f8;
 }
 
 .styled_font {
@@ -76,12 +77,16 @@ body {
   /* font-style: italic; */
 }
 
+.color_neonGreen {
+  color:#49DD9D;
+}
+
 section:not(.visualSection) {
   width:100%;
   padding:50px 0;
 }
 
-section .inner {
+section .sectionInner {
   width:1100px;
   margin:0 auto;
 }
