@@ -10,8 +10,9 @@ export const PreviewContainer = styled.div`
   position: relative;
   flex:1;
   height: 300px;
-  background-color: pink;
+  background-color: #FFB9B9;
   border-radius:30px;
+  cursor:pointer;
 `;
 
 export const PreviewMask = styled.img`
@@ -22,4 +23,6 @@ export const PreviewMask = styled.img`
 
 export const DescriptionContainer = styled.div`
   flex:1;
+  padding-left:30px;
 `
+ 

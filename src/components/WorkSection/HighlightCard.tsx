@@ -6,7 +6,9 @@ export default function HightlightCard () {
       <PreviewContainer>
         <PreviewMask src="/assets/images/workSectionMask.svg" alt="" />
       </PreviewContainer>
-      <DescriptionContainer></DescriptionContainer>
+      <DescriptionContainer>
+        <p>급여</p>
+      </DescriptionContainer>
     </CardContainer>
   )
 }
