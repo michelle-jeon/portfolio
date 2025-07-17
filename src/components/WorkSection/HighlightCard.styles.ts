@@ -24,5 +24,24 @@ export const PreviewMask = styled.img`
 export const DescriptionContainer = styled.div`
   flex:1;
   padding-left:30px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 4px 0;
+  }
 `
- 
+
+ export const FeatureList = styled.ul`
+  margin: 8px 0 0 0;
+  padding-left: 20px;
+
+  li {
+    list-style-type: disc;
+    margin-bottom: 4px;
+  }
+`;
