@@ -21,6 +21,16 @@ export const PreviewMask = styled.img`
   right:0;
 `
 
+export const DetailPageArrow = styled.span`
+  width:94px;
+  height:94px;
+  position:absolute;
+  bottom:0;
+  right:0;
+  background-color:#FFB9B9;
+  border-radius:30px;
+`
+
 export const DescriptionContainer = styled.div`
   flex:1;
   padding-left:30px;

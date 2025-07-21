@@ -1,4 +1,4 @@
-import {CardContainer, DescriptionContainer, FeatureList, PreviewContainer, PreviewMask} from './HighlightCard.styles'
+import {CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, PreviewContainer, PreviewMask} from './HighlightCard.styles'
 
 type HighlightCardProps = {
   title:string;
@@ -8,10 +8,11 @@ type HighlightCardProps = {
 }
 
 export default function HightlightCard ({title,period,contribution,features}:HighlightCardProps) {
-  return (
+  return ( 
     <CardContainer>
       <PreviewContainer>
-        <PreviewMask src="/assets/images/workSectionMask.svg" alt="" />
+        <PreviewMask src="/assets/images/workSectionMaskHid.svg" alt="" />
+        <DetailPageArrow></DetailPageArrow>
       </PreviewContainer>
       <DescriptionContainer>
         <h3 >{title}</h3>
