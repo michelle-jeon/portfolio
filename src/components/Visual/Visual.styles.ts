@@ -21,7 +21,7 @@ export const StickyContainer = styled.div`
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  padding-top:100px;
+  padding-top:50px;
 `;
 
 export const GridContainer = styled.div`

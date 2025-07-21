@@ -8,17 +8,38 @@ export const CardContainer = styled.div`
 
 export const PreviewContainer = styled.div`
   position: relative;
-  flex:1;
+  flex: 1;
   height: 300px;
-  background-color: #FFB9B9;
-  border-radius:30px;
-  cursor:pointer;
+  border-radius: 30px;
+  cursor: pointer;
+  overflow: hidden;
 `;
+
+export const BlurBackground = styled.img`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  border-radius:30px;
+  object-fit: cover;
+  filter: blur(7px) brightness(0.4);
+  z-index: 0;
+  overflow:hidden;
+`;
+
+export const MainBackground = styled.img`
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  z-index: 1;
+`;
+
 
 export const PreviewMask = styled.img`
   position:absolute;
-  bottom:0;
-  right:0;
+  bottom:-1px;
+  right:-1px;
 `
 
 export const DetailPageArrow = styled.span`

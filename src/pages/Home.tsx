@@ -61,7 +61,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
               'API 연동 및 예외 처리',
               'CBT 결과 반영 화면 흐름 및 UX 개선'
             ]}
-          
+            background=""
           ></HightlightCard>
           <HightlightCard
             title="인건비 서비스"
@@ -73,7 +73,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
               '사용자 설문 수집',
               '신고 효율 증대를 위한 UI 개선'
             ]}
-          
+            background='/assets/home/work/highlightScreenshotSlc.png'
           ></HightlightCard>
         </div>
       </section>
