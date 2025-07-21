@@ -1,4 +1,5 @@
 import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer, PreviewMask} from './HighlightCard.styles'
+import { GoArrowRight } from "react-icons/go";
 
 type HighlightCardProps = {
   title:string;
@@ -15,7 +16,9 @@ export default function HightlightCard ({title,period,contribution,features,back
         <BlurBackground src={background}></BlurBackground>
         <MainBackground src={background}></MainBackground>
         <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" />
-        <DetailPageArrow></DetailPageArrow>
+        <DetailPageArrow>
+          <GoArrowRight />
+        </DetailPageArrow>
       </PreviewContainer>
       <DescriptionContainer>
         <h3 >{title}</h3>

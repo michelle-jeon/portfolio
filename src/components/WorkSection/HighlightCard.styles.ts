@@ -10,7 +10,7 @@ export const PreviewContainer = styled.div`
   position: relative;
   flex: 1;
   height: 300px;
-  border-radius: 30px;
+  border-radius: 30px 30px 20px 30px;
   cursor: pointer;
   overflow: hidden;
 `;
@@ -38,19 +38,43 @@ export const MainBackground = styled.img`
 
 export const PreviewMask = styled.img`
   position:absolute;
-  bottom:-1px;
-  right:-1px;
+  bottom:0;
+  right:0;
 `
 
 export const DetailPageArrow = styled.span`
-  width:94px;
-  height:94px;
-  position:absolute;
-  bottom:0;
-  right:0;
-  background-color:#FFB9B9;
-  border-radius:30px;
-`
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #49DD9D;
+  border-radius: 20px;
+z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+  }
+
+  svg {
+    width: 32px;
+    height: 32px;
+    color: #fff; /* 화살표는 흰색으로 */
+    transition: transform 0.3s ease;
+    transform: rotate(-135deg);
+  }
+
+  &:hover svg {
+    transform: rotate(-45deg);
+  }
+`;
+
 
 export const DescriptionContainer = styled.div`
   flex:1;
