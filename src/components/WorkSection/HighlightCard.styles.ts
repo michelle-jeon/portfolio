@@ -38,8 +38,8 @@ export const MainBackground = styled.img`
 
 export const PreviewMask = styled.img`
   position:absolute;
-  bottom:0;
-  right:0;
+  bottom:-1px;
+  right:-1px;
 `
 
 export const DetailPageArrow = styled.span`
