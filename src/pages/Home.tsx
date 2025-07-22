@@ -1,10 +1,8 @@
-import { useEffect, useRef, useState } from 'react';
-import Header from '../components/Header/Header';
 import Visual from '../components/Visual/Visual';
-import Footer from '../components/Footer/Footer';
 import styled from 'styled-components';
 import HightlightCard from '@/components/WorkSection/HighlightCard';
 import ToyCard from '@/components/ToySection/ToyCard';
+import { useOutletContext } from 'react-router-dom';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
@@ -12,31 +10,15 @@ const SectionTitle = styled.div`
 `
 
 export default function Home(){
-const [selectedNav,setSelectedNav] = useState('Home');
-
-  const homeRef = useRef<HTMLElement | null>(null);
-  const workRef = useRef<HTMLElement | null>(null);
-  const toyRef = useRef<HTMLElement | null>(null);
-  const contactRef = useRef<HTMLElement | null>(null);
-
-  useEffect(()=>{
-    const refs: Record<string, React.RefObject<HTMLElement | null>> = {
-      HOME: homeRef,
-      WORK: workRef,
-      TOY: toyRef,
-      CONTACT: contactRef
-    };
-
-    const targetRef = refs[selectedNav];
-    targetRef?.current?.scrollIntoView({ behavior: 'smooth' });
-  },[selectedNav])
+  const { homeRef, workRef, toyRef } =
+    useOutletContext<{
+      homeRef: React.RefObject<HTMLElement>;
+      workRef: React.RefObject<HTMLElement>;
+      toyRef: React.RefObject<HTMLElement>;
+    }>();
 
   return (
-    <div>
-      <Header 
-        selectedNav={selectedNav}
-        onNavChange={setSelectedNav}
-      />
+    <main>
       <section className='visualSection' ref={homeRef}>
         <Visual />
       </section>
@@ -64,6 +46,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
             ]}
             backColor="#fff"
             background="/assets/home/work/highlightScreenshotSslc.png"
+            id="salary"
           ></HightlightCard>
           <HightlightCard
             title="인건비 서비스"
@@ -77,6 +60,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
             ]}
             backColor='#fff'
             background='/assets/home/work/highlightScreenshotSlc.png'
+            id='labor'
           ></HightlightCard>
           <HightlightCard
             title="면접자 관리 시스템"
@@ -89,6 +73,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
               '보안 기능 확대'
             ]}
             background="/assets/home/work/highlightScreenshotRms.jpg"
+            id='interview'
           ></HightlightCard>
         </div>
       </section>
@@ -100,11 +85,6 @@ const [selectedNav,setSelectedNav] = useState('Home');
           <ToyCard></ToyCard>
         </div>
       </section>
-
-      {/* CONTACT */}
-      <section ref={contactRef}>
-        <Footer  />
-      </section>
-    </div>
+    </main>
   );
 }

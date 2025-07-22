@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer, PreviewMask} from './HighlightCard.styles'
 import { GoArrowRight } from "react-icons/go";
 
@@ -6,14 +7,19 @@ type HighlightCardProps = {
   period: string;
   contribution: string;
   features: string[];
-  background: string;  // 이미지 optional
-  backColor?: string;   // 색상 optional
+  background: string;
+  backColor?: string;
+  id:string;
 }
 
-export default function HightlightCard ({title,period,contribution,features,background,backColor}:HighlightCardProps) {
+export default function HightlightCard ({title,period,contribution,features,background,backColor,id}:HighlightCardProps) {
+  const navigate=useNavigate();
+
   return ( 
     <CardContainer>
-      <PreviewContainer >
+      <PreviewContainer 
+        onClick={() => navigate(`/work/${id}`)}
+      >
         <BlurBackground
           background={background}
           backColor={backColor}
