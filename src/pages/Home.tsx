@@ -61,7 +61,8 @@ const [selectedNav,setSelectedNav] = useState('Home');
               'API 연동 및 예외 처리',
               'CBT 결과 반영 화면 흐름 및 UX 개선'
             ]}
-            background=""
+            backColor="#fff"
+            background="/assets/home/work/highlightScreenshotSslc.png"
           ></HightlightCard>
           <HightlightCard
             title="인건비 서비스"
@@ -73,7 +74,20 @@ const [selectedNav,setSelectedNav] = useState('Home');
               '사용자 설문 수집',
               '신고 효율 증대를 위한 UI 개선'
             ]}
+            backColor='#EB6225'
             background='/assets/home/work/highlightScreenshotSlc.png'
+          ></HightlightCard>
+          <HightlightCard
+            title="면접자 관리 시스템"
+            period="2023.06"
+            contribution="Frontend 초기 개발 100%"
+            features={[
+              '코딩테스트 예약 페이지 개발',
+              '전용 어드민 제작',
+              'UI 및 기능 개선',
+              '보안 기능 확대'
+            ]}
+            background="/assets/home/work/highlightScreenshotRms.jpg"
           ></HightlightCard>
         </div>
       </section>

@@ -2,20 +2,24 @@ import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, Fe
 import { GoArrowRight } from "react-icons/go";
 
 type HighlightCardProps = {
-  title:string;
-  period:string;
-  contribution:string;
-  features:string[];
-  background:string;
+  title: string;
+  period: string;
+  contribution: string;
+  features: string[];
+  background: string;  // 이미지 optional
+  backColor?: string;   // 색상 optional
 }
 
-export default function HightlightCard ({title,period,contribution,features,background}:HighlightCardProps) {
+export default function HightlightCard ({title,period,contribution,features,background,backColor}:HighlightCardProps) {
   return ( 
     <CardContainer>
       <PreviewContainer >
-        <BlurBackground src={background}></BlurBackground>
+        <BlurBackground
+          background={background}
+          backColor={backColor}
+        />
         <MainBackground src={background}></MainBackground>
-        <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" />
+        {/* <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" /> */}
         <DetailPageArrow>
           <GoArrowRight />
         </DetailPageArrow>

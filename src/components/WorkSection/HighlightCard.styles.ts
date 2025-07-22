@@ -15,15 +15,29 @@ export const PreviewContainer = styled.div`
   overflow: hidden;
 `;
 
-export const BlurBackground = styled.img`
+interface BlurBackgroundProps {
+  background: string;
+  backColor?: string;
+}
+
+export const BlurBackground = styled.div<BlurBackgroundProps>`
   position: absolute;
   inset: 0;
   width: 100%;
-  border-radius:30px;
-  object-fit: cover;
-  filter: blur(7px) brightness(0.4);
+  height: 100%;
+  border-radius: 30px;
+  background: ${({ backColor, background }) =>
+    backColor
+      ? backColor
+      : `url(${background}) center/cover no-repeat`};
+   ${({ backColor }) =>
+    !backColor &&
+    `
+      filter: blur(7px) brightness(0.4);
+    `}
+
   z-index: 0;
-  overflow:hidden;
+  overflow: hidden;
 `;
 
 export const MainBackground = styled.img`
