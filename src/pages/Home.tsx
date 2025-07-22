@@ -4,6 +4,7 @@ import Visual from '../components/Visual/Visual';
 import Footer from '../components/Footer/Footer';
 import styled from 'styled-components';
 import HightlightCard from '@/components/WorkSection/HighlightCard';
+import ToyCard from '@/components/ToySection/ToyCard';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
@@ -94,7 +95,10 @@ const [selectedNav,setSelectedNav] = useState('Home');
 
       {/* TOY */}
       <section ref={toyRef}>
-
+        <div className="sectionInner">
+          <SectionTitle className='color_mypink'>TOY</SectionTitle>
+          <ToyCard></ToyCard>
+        </div>
       </section>
 
       {/* CONTACT */}

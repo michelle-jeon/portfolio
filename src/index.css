@@ -81,6 +81,10 @@ body {
   color:#49DD9D;
 }
 
+.color_mypink {
+  color:#FFA2B6;
+}
+
 section:not(.visualSection) {
   width:100%;
   padding:50px 0;
