@@ -74,7 +74,7 @@ const [selectedNav,setSelectedNav] = useState('Home');
               '사용자 설문 수집',
               '신고 효율 증대를 위한 UI 개선'
             ]}
-            backColor='#EB6225'
+            backColor='#fff'
             background='/assets/home/work/highlightScreenshotSlc.png'
           ></HightlightCard>
           <HightlightCard

@@ -26,9 +26,9 @@ export default function HightlightCard ({title,period,contribution,features,back
       </PreviewContainer>
       <DescriptionContainer>
         <h3 >{title}</h3>
-        <p>기간 | {period}</p>
-        <p>기여도 | {contribution}</p>
-        <p>주요 기능</p>
+        <p><span className='font-bold'>기간 |</span> {period}</p>
+        <p><span className='font-bold'>기여도 |</span> {contribution}</p>
+        <p className='font-bold'>주요 기능</p>
         <FeatureList>
           {features.map((feature, idx) => (
             <li key={idx}>{feature}</li>
