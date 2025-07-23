@@ -3,9 +3,14 @@ import WorkDetailHeader from "./WorkDetailHeader";
 import WorkSteps from "./WorkSteps";
 import WorkDetailPhoneMockup from "./WorkDetailPhoneMockup";
 
-type Step = {
+type StepItemType = {
   title: string;
   detail: string;
+};
+
+type StepSection = {
+  sectionTitle: string;
+  items: StepItemType[];
 };
 
 type Props = {
@@ -14,12 +19,18 @@ type Props = {
   contribution: string;
   apps: string[];
   description: string[];
-  steps: Step[];
+  steps: StepSection[];
   gif: string;
 };
 
 export default function WorkDetailLayout({
-  title, period, contribution, apps, description, steps, gif,
+  title,
+  period,
+  contribution,
+  apps,
+  description,
+  steps,
+  gif,
 }: Props) {
   return (
     <Container>

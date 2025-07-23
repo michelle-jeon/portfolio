@@ -6,6 +6,14 @@ export const Steps = styled.div`
   flex-direction: column;
   gap: 16px;
 `;
+export const Section = styled.div``;
+
+export const SectionTitle = styled.h2`
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  color: #2c3e50;
+`;
 
 export const StepItem = styled.div`
   font-size: 14px;
