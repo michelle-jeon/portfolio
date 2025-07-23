@@ -5,7 +5,7 @@ type HeaderProps = {
   selectedNav: string;
 };
 
-export default function Header({ onNavChange, selectedNav }: HeaderProps) {
+export default function Header({ onNavChange }: HeaderProps) {
   const navigations = [
     { name: 'HOME' },
     { name: 'WORK' },

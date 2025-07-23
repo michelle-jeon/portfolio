@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer, PreviewMask} from './HighlightCard.styles'
+import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer} from './HighlightCard.styles'
 import { GoArrowRight } from "react-icons/go";
 
 type HighlightCardProps = {
