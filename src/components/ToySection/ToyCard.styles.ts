@@ -18,7 +18,7 @@ export const CardBox = styled.div`
   overflow: hidden;
   position: relative;
   &:hover img {
-    transform: scale(1.05);
+    transform: scale(1.0);
   }
 `;
 
@@ -27,6 +27,7 @@ export const CardImage = styled.img`
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+  transform: scale(1.05);
 `;
 
 export const CardBottom = styled.div`
@@ -42,7 +43,7 @@ position: absolute;
 `
 
 export const CardTextBox = styled.div`
-  flex:1;
+  
 `;
 
 export const CardTitle = styled.div`

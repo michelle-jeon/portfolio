@@ -4,13 +4,14 @@ export const AboutWrapper = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 60px 0;
+  padding: 100px 0 60px;
   gap: 50px;
   position: relative;
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
+
 `;
 
 export const InfoBox = styled.div`
@@ -33,7 +34,7 @@ export const GrayButton = styled.button`
   padding: 5px 10px;
   background-color: #eee;
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
   font-size: 12px;
   font-weight: 500;
   cursor: pointer;
@@ -47,7 +48,7 @@ export const Row = styled.div`
 `;
 
 export const Label = styled.div`
-  width: 60px;
+  width: 45px;
   font-weight: 600;
   flex-shrink: 0;
 `;

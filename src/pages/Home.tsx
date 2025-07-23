@@ -8,6 +8,7 @@ import About from '@/components/About/About';
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
   font-size:48px;
+  padding-top:50px;
 `
 
 export default function Home(){
@@ -24,7 +25,7 @@ export default function Home(){
         <Visual />
       </section>
       {/* about */}
-      <section className='Homesection'>
+      <section className='Homesection about'>
         <div className="sectionInner">
           <About />
         </div>
@@ -86,7 +87,7 @@ export default function Home(){
           <ToyCard
             title="얼마세우"
             description="세후 급여 계산기 : 프리랜서, 상용직, 일용직"
-            skills={['React', 'Typescript', 'Styled']}
+            skills={['React', 'Typescript', 'Styled Components', 'Tailwind']}
             image="/assets/home/toy/shrimply-calc-pay.png"
             link="https://shrimply-calc-pay.vercel.app/"
           />
