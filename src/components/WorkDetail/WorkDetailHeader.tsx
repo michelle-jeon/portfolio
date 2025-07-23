@@ -7,6 +7,7 @@ import {
   Apps,
   DescriptionList,
   DescriptionItem,
+  ContainerInner,
 } from "./WorkDetailHeader.styles";
 
 type Props = {
@@ -26,6 +27,7 @@ export default function WorkDetailHeader({
 }: Props) {
   return (
     <Container>
+      <ContainerInner>
       <Left>
         <Back>{"← Prev"}</Back>
         <Title>{title}</Title>
@@ -44,6 +46,7 @@ export default function WorkDetailHeader({
           <DescriptionItem key={i}>{line}</DescriptionItem>
         ))}
       </DescriptionList>
+      </ContainerInner>
     </Container>
   );
 }

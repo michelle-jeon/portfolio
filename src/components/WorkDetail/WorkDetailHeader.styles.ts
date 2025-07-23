@@ -1,12 +1,19 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width:100%;
+  padding:200px 0 100px;
+  background-color:#eee;
+`;
+
+export const ContainerInner = styled.div`
+  max-width:1100px;
+  margin:0 auto;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 20px;
-  padding-bottom: 20px;
-`;
+`
 
 export const Left = styled.div`
   display: flex;

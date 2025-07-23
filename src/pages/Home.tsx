@@ -19,18 +19,18 @@ export default function Home(){
 
   return (
     <main>
-      <section className='visualSection' ref={homeRef}>
+      <section ref={homeRef}>
         <Visual />
       </section>
       {/* about */}
-      <section>
+      <section className='Homesection'>
         <div className="sectionInner">
           
         </div>
       </section>
 
       {/* WORK */}
-      <section ref={workRef}>
+      <section className='Homesection' ref={workRef}>
         <div className="sectionInner">
           <SectionTitle className='color_neonGreen'>WORK</SectionTitle>
           <p className=''>널리소프트 2023.04 - 현재</p>
@@ -79,7 +79,7 @@ export default function Home(){
       </section>
 
       {/* TOY */}
-      <section ref={toyRef}>
+      <section className='Homesection' ref={toyRef}>
         <div className="sectionInner">
           <SectionTitle className='color_mypink'>TOY</SectionTitle>
           <ToyCard></ToyCard>
