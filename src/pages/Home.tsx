@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import HightlightCard from '@/components/WorkSection/HighlightCard';
 import ToyCard from '@/components/ToySection/ToyCard';
 import { useOutletContext } from 'react-router-dom';
+import About from '@/components/About/About';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
@@ -25,7 +26,7 @@ export default function Home(){
       {/* about */}
       <section className='Homesection'>
         <div className="sectionInner">
-          
+          <About />
         </div>
       </section>
 
