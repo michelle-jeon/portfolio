@@ -4,6 +4,7 @@ import HightlightCard from '@/components/WorkSection/HighlightCard';
 import ToyCard from '@/components/ToySection/ToyCard';
 import { useOutletContext } from 'react-router-dom';
 import About from '@/components/About/About';
+import SummaryCard from '@/components/WorkSection/SummaryCard';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
@@ -74,9 +75,27 @@ export default function Home(){
               'UI 및 기능 개선',
               '보안 기능 확대'
             ]}
+            backColor='#fff'
             background="/assets/home/work/highlightScreenshotRms.jpg"
             id='interview'
           ></HightlightCard>
+          <div className="flex gap-6 w-full justify-between pt-20 pb-20">
+            <SummaryCard
+              img="/assets/home/work/summaryScreenshotHomepage.png"
+              title="홈페이지 리뉴얼"
+              desc="반응형 UI 홈페이지 디자인 리뉴얼 퍼블리싱"
+            />
+            <SummaryCard
+              img="/assets/home/work/summaryScreenshotChat.png"
+              title="챗봇 리뉴얼"
+              desc="앱, 홈페이지 챗봇 리뉴얼 및 리팩토링"
+            />
+            <SummaryCard
+              img="/assets/home/work/summaryScreenshotCxem.png"
+              title="CX 어드민 개선"
+              desc="페이지네이션 추가 및 검색 필터 최적화로 어드민 과부하 개선 로딩 시간 91퍼센트 감소"
+            />
+          </div>
         </div>
       </section>
 
