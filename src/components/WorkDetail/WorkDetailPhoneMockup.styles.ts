@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Phone = styled.div`
-  width: 200px;
-  height: 400px;
+  width: 350px;
+  height: 752px;
   border: 8px solid silver;
   border-radius: 30px;
   position: relative;

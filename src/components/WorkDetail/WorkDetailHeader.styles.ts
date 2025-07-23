@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const ContainerInner = styled.div`
-  max-width:1100px;
+  max-width:800px;
   margin:0 auto;
   display: flex;
   justify-content: space-between;

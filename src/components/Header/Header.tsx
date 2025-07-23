@@ -15,7 +15,7 @@ export default function Header({ onNavChange }: HeaderProps) {
 
   return (
     <HeaderWrapper>
-      <Title className="styled_font">MIKYEONG JEON</Title>
+      <Title className="styled_font">MIGYUL</Title>
       <NavBar>
         {navigations.map((nav) => (
           <NavItem

@@ -25,7 +25,7 @@ const workDetails = {
         ],
       },
     ],
-    gif: "/assets/work/salary.gif",
+    gif: "/assets/work-detail/workDetailSalaryDummy.jpg",
   },
 
   labor: {
@@ -51,14 +51,14 @@ const workDetails = {
         ],
       },
     ],
-    gif: "/assets/work/labor.gif",
+    gif: "/assets/work-detail/workDetailLaborDummy.jpg",
   },
 
   interview: {
     title: "면접자 관리 시스템",
     period: "2023.06",
     contribution: "Frontend 100%",
-    apps: ["웹 어드민"],
+    apps: ["웹페이지","웹 어드민"],
     description: [
       "사용한 기술 트러블슈팅한 것 정리 블라블라",
       "사용한 기술 트러블슈팅한 것 정리 블라블라",
@@ -80,7 +80,7 @@ const workDetails = {
         ],
       },
     ],
-    gif: "/assets/work/interview.gif",
+    gif: "/assets/work-detail/workDetailRms.gif",
   },
 };
 

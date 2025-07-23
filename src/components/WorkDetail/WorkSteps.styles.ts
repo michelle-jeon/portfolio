@@ -27,4 +27,5 @@ export const StepTitle = styled.div`
 
 export const StepDetail = styled.div`
   color: #666;
+  margin-bottom:8px;
 `;

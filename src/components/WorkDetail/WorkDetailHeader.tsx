@@ -14,7 +14,7 @@ type Props = {
   title: string;
   period: string;
   contribution: string;
-  apps: string[];          // 예: ["하이브리드 웹앱", "웹 어드민"]
+  apps: string[];
   description: string[];
 };
 
