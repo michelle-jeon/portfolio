@@ -30,15 +30,23 @@ export const ButtonGroup = styled.div`
   margin-bottom: 20px;
 `;
 
-export const GrayButton = styled.button`
-  padding: 5px 10px;
+// About.styles.ts
+export const GrayButton = styled.a`
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 20px;
   background-color: #eee;
-  border: none;
-  border-radius: 8px;
-  font-size: 12px;
+  color: #333;
   font-weight: 500;
-  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #ddd;
+  }
 `;
+
 
 export const Row = styled.div`
   display: flex;

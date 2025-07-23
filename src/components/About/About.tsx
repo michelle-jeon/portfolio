@@ -35,9 +35,15 @@ export default function About() {
       <InfoBox>
         <Name>전미경 MIKYEONG JEON</Name>
         <ButtonGroup>
-          <GrayButton>이력서</GrayButton>
-          <GrayButton>github</GrayButton>
-          <GrayButton>블로그</GrayButton>
+          {/* <GrayButton href="/assets/Jeon_Mikyeong_Resume.pdf" target="_blank" rel="noopener noreferrer">
+            이력서
+          </GrayButton> */}
+          <GrayButton href="https://github.com/michelle-jeon" target="_blank" rel="noopener noreferrer">
+            GitHub
+          </GrayButton>
+          <GrayButton href="https://tantail.tistory.com/" target="_blank" rel="noopener noreferrer">
+            블로그
+          </GrayButton>
         </ButtonGroup>
 
         <Row>

@@ -15,6 +15,10 @@ export default function Root(){
   const contactRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  
+  useEffect(() => {
     if (location.pathname !== '/') {
       return;
     }
