@@ -16,18 +16,18 @@ export const StickyContainer = styled.div`
   top: 0;
   // background-color:pink;
   height: 100vh;
-  min-height: 1000px;
+  min-height: 900px;
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
-  padding-top:50px;
+  padding-top:70px;
 `;
 
 export const GridContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(6,150px);
-  grid-template-rows: repeat(6,150px);
+  grid-template-columns: repeat(6,140px);
+  grid-template-rows: repeat(6,140px);
   gap: 0;
   position: relative;
   // background-color:blue;
