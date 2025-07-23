@@ -90,6 +90,10 @@ section.Homesection {
   padding:50px 0;
 }
 
+section.Homesection.toy{
+  background-color: #eee;
+}
+
 section .sectionInner {
   width:1100px;
   margin:0 auto;

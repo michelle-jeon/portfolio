@@ -79,10 +79,24 @@ export default function Home(){
       </section>
 
       {/* TOY */}
-      <section className='Homesection' ref={toyRef}>
+      <section className='Homesection toy' ref={toyRef}>
         <div className="sectionInner">
           <SectionTitle className='color_mypink'>TOY</SectionTitle>
-          <ToyCard></ToyCard>
+          <ToyCard
+            title="얼마세우"
+            description="세후 급여 계산기 : 프리랜서, 상용직, 일용직"
+            skills={['React', 'Typescript', 'Styled']}
+            image="/assets/home/toy/shrimply-calc-pay.png"
+            link="https://shrimply-calc-pay.vercel.app/"
+          />
+
+          <ToyCard
+            title="신입 포트폴리오"
+            description="gsap 등을 이용한 인터렉티브 UI/UX, 클론 코딩, 교육 이수 과정"
+            skills={['HTML', 'Javascript', 'CSS']}
+            image="/assets/home/toy/publisher-portfolio.png"
+            link="http://jeonmk.dothome.co.kr/portfolio/index.html"
+          />
         </div>
       </section>
     </main>
