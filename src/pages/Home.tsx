@@ -35,7 +35,7 @@ export default function Home(){
       {/* WORK */}
       <section className='Homesection' ref={workRef}>
         <div className="sectionInner">
-          <SectionTitle className='color_neonGreen'>WORK</SectionTitle>
+          <SectionTitle className='color_neonGreen'>Career</SectionTitle>
           <p className=''>널리소프트 2023.04 - 현재</p>
           <HightlightCard
             title="급여 서비스"
@@ -102,7 +102,7 @@ export default function Home(){
       {/* TOY */}
       <section className='Homesection toy' ref={toyRef}>
         <div className="sectionInner">
-          <SectionTitle className='color_mypink'>TOY</SectionTitle>
+          <SectionTitle className='color_mypink'>Personal</SectionTitle>
           <ToyCard
             title="얼마세우"
             description="세후 급여 계산기 : 프리랜서, 상용직, 일용직"
