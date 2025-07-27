@@ -22,3 +22,12 @@ export const Gif = styled.img`
   height: 100%;
   object-fit: cover;
 `;
+
+export const SpinnerWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
