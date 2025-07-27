@@ -19,6 +19,7 @@ export const Left = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
+  flex:1;
 `;
 
 export const Back = styled.div`
@@ -51,6 +52,7 @@ export const DescriptionList = styled.div`
   gap: 4px;
   font-size: 14px;
   color: #000;
+  flex:1;
 `;
 
 export const DescriptionItem = styled.div``;

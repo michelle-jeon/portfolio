@@ -54,7 +54,7 @@ export default function About() {
         <Row>
           <Label>수료</Label>
           <Value>
-            이젠아카데미 프론트엔드 개발자
+            이젠아카데미 웹 퍼블리셔 프론트엔드
           </Value>
           <DateText>2022.11 - 2023.04</DateText>
         </Row>
