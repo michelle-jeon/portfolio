@@ -25,7 +25,7 @@ export default function Home(){
       const preloadImages = [
         "/assets/work-detail/workDetailSalaryDummy.jpg",
         "/assets/work-detail/workDetailLaborDummy.jpg",
-        "/assets/work-detail/workDetailRms.gif",
+        "/assets/work-detail/workDetailRmsDummy.jpg",
       ];
 
       preloadImages.forEach((src) => {
