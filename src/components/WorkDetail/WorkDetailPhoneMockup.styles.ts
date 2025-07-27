@@ -15,19 +15,14 @@ export const Screen = styled.div`
   overflow: hidden;
   border-radius: 22px;
   background: #fff;
+  position: relative;
 `;
 
-export const Gif = styled.img`
+export const StyledImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-`;
-
-export const SpinnerWrapper = styled.div`
   position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: 0;
+  left: 0;
 `;

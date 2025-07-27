@@ -1,31 +1,27 @@
 import { useState } from "react";
-import { Phone, Screen, Gif, SpinnerWrapper } from "./WorkDetailPhoneMockup.styles";
-import { ClipLoader } from "react-spinners"; // 또는 다른 스피너 컴포넌트
+import { Phone, Screen, StyledImage } from "./WorkDetailPhoneMockup.styles";
 
 type Props = {
   gif: string;
 };
 
 export default function WorkDetailPhoneMockup({ gif }: Props) {
-  const [isLoaded, setIsLoaded] = useState(false);
+  const [isGifLoaded, setIsGifLoaded] = useState(false);
+
+  // gif 경로에서 dummy 이미지 경로 유추
+  const dummy = gif.replace(/\.gif$/, "Dummy.jpg");
 
   return (
     <Phone>
       <Screen>
-        {!isLoaded && (
-          <SpinnerWrapper>
-            <ClipLoader size={40} color="#999" />
-          </SpinnerWrapper>
+        {!isGifLoaded && (
+          <StyledImage src={dummy} alt="loading preview" />
         )}
-        <Gif
+        <StyledImage
           src={gif}
           alt="work gif"
-          style={{ display: isLoaded ? "block" : "none" }}
-          onLoad={() => setIsLoaded(true)}
-          onError={() => {
-            // 로드 실패 시 fallback 처리
-            setIsLoaded(true);
-          }}
+          style={{ display: isGifLoaded ? "block" : "none" }}
+          onLoad={() => setIsGifLoaded(true)}
         />
       </Screen>
     </Phone>
