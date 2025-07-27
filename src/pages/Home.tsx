@@ -5,6 +5,7 @@ import ToyCard from '@/components/ToySection/ToyCard';
 import { useOutletContext } from 'react-router-dom';
 import About from '@/components/About/About';
 import SummaryCard from '@/components/WorkSection/SummaryCard';
+import { useEffect } from 'react';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
@@ -19,6 +20,19 @@ export default function Home(){
       workRef: React.RefObject<HTMLElement>;
       toyRef: React.RefObject<HTMLElement>;
     }>();
+
+    useEffect(() => {
+      const preloadImages = [
+        "/assets/work-detail/workDetailSalaryDummy.jpg",
+        "/assets/work-detail/workDetailLaborDummy.jpg",
+        "/assets/work-detail/workDetailRms.gif",
+      ];
+
+      preloadImages.forEach((src) => {
+        const img = new Image();
+        img.src = src;
+      });
+    }, []);
 
   return (
     <main>
