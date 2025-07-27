@@ -25,7 +25,7 @@ const workDetails = {
         ],
       },
     ],
-    gif: "/assets/work-detail/workDetailSalaryDummy.jpg",
+    gif: "/assets/work-detail/workDetailSalary.gif",
   },
 
   labor: {
@@ -51,7 +51,7 @@ const workDetails = {
         ],
       },
     ],
-    gif: "/assets/work-detail/workDetailLaborDummy.jpg",
+    gif: "/assets/work-detail/workDetailLabor.gif",
   },
 
   interview: {
