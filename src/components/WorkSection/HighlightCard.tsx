@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer} from './HighlightCard.styles'
+import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer,PreviewMask} from './HighlightCard.styles'
 import { GoArrowRight } from "react-icons/go";
 
 type HighlightCardProps = {
@@ -25,7 +25,7 @@ export default function HightlightCard ({title,period,contribution,features,back
           backColor={backColor}
         />
         <MainBackground src={background}></MainBackground>
-        {/* <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" /> */}
+        <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" />
         <DetailPageArrow>
           <GoArrowRight />
         </DetailPageArrow>

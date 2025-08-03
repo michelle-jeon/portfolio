@@ -52,6 +52,7 @@ export const MainBackground = styled.img`
 
 export const PreviewMask = styled.img`
   position:absolute;
+  z-index:2;
   bottom:-1px;
   right:-1px;
 `
