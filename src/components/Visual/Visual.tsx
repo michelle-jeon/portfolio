@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { VisualWrapper, GridContainer, GridItem, StickyContainer, Updated } from './Visual.styles';
+import * as S from './Visual.styles';
 
 export default function Visual() {
   // 6x6 그리드에서 보이는 블록들만 정의 (1부터 시작)
@@ -55,11 +55,11 @@ const [progress, setProgress] = useState(0);
   }, []);
 
   return (
-    <VisualWrapper id="visual">
-      <StickyContainer>
-        <GridContainer>
+    <S.VisualWrapper id="visual">
+      <S.StickyContainer>
+        <S.GridContainer>
           {blocks.map((block, index) => (
-            <GridItem
+            <S.GridItem
               key={index}
               $row={block.row}
               $col={block.col}
@@ -71,11 +71,11 @@ const [progress, setProgress] = useState(0);
               {block.text && block.text.split('\n').map((line, i) => (
                 <div key={i}>{line}</div>
               ))}
-            </GridItem>
+            </S.GridItem>
           ))}
-        </GridContainer>
-        <Updated>UPDATED 2025. 7. 27</Updated>
-      </StickyContainer>
-    </VisualWrapper>
+        </S.GridContainer>
+        <S.Updated>UPDATED 2025. 8. 5</S.Updated>
+      </S.StickyContainer>
+    </S.VisualWrapper>
   );
 }

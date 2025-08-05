@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Phone, Screen, StyledImage } from "./WorkDetailPhoneMockup.styles";
+import * as S from "./WorkDetailPhoneMockup.styles";
 
 type Props = {
   gif: string;
@@ -12,18 +12,18 @@ export default function WorkDetailPhoneMockup({ gif }: Props) {
   const dummy = gif.replace(/\.gif$/, "Dummy.jpg");
 
   return (
-    <Phone>
-      <Screen>
+    <S.Phone>
+      <S.Screen>
         {!isGifLoaded && (
-          <StyledImage src={dummy} alt="loading preview" />
+          <S.StyledImage src={dummy} alt="loading preview" />
         )}
-        <StyledImage
+        <S.StyledImage
           src={gif}
           alt="work gif"
           style={{ display: isGifLoaded ? "block" : "none" }}
           onLoad={() => setIsGifLoaded(true)}
         />
-      </Screen>
-    </Phone>
+      </S.Screen>
+    </S.Phone>
   );
 }

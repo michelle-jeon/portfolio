@@ -1,4 +1,4 @@
-import { HeaderWrapper, NavBar, NavItem, Title } from './Header.styles';
+import * as S from './Header.styles';
 
 type HeaderProps = {
   onNavChange: (nav: string) => void;
@@ -14,19 +14,19 @@ export default function Header({ onNavChange }: HeaderProps) {
   ];
 
   return (
-    <HeaderWrapper>
+    <S.HeaderWrapper>
       {/* <Title className="styled_font">MIGYUL</Title> */}
       <p className='w-12 pt-4'><img src="/assets/logo.svg" alt="logo" /></p>
-      <NavBar>
+      <S.NavBar>
         {navigations.map((nav) => (
-          <NavItem
+          <S.NavItem
             key={nav.name}
             onClick={() => onNavChange(nav.name)}
           >
             {nav.name}
-          </NavItem>
+          </S.NavItem>
         ))}
-      </NavBar>
-    </HeaderWrapper>
+      </S.NavBar>
+    </S.HeaderWrapper>
   );
 }

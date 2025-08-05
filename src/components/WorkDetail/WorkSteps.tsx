@@ -1,11 +1,4 @@
-import {
-  Steps,
-  Section,
-  SectionTitle,
-  StepItem,
-  StepTitle,
-  StepDetail,
-} from "./WorkSteps.styles";
+import * as S from "./WorkSteps.styles";
 
 type StepItemType = {
   title: string;
@@ -23,18 +16,18 @@ type Props = {
 
 export default function WorkSteps({ steps }: Props) {
   return (
-    <Steps>
+    <S.Steps>
       {steps.map((section, i) => (
-        <Section key={i}>
-          <SectionTitle>{section.sectionTitle}</SectionTitle>
+        <S.Section key={i}>
+          <S.SectionTitle>{section.sectionTitle}</S.SectionTitle>
           {section.items.map((item, j) => (
-            <StepItem key={j}>
-              <StepTitle>{item.title}</StepTitle>
-              <StepDetail>{item.detail}</StepDetail>
-            </StepItem>
+            <S.StepItem key={j}>
+              <S.StepTitle>{item.title}</S.StepTitle>
+              <S.StepDetail>{item.detail}</S.StepDetail>
+            </S.StepItem>
           ))}
-        </Section>
+        </S.Section>
       ))}
-    </Steps>
+    </S.Steps>
   );
 }

@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom';
-import {BlurBackground, CardContainer, DescriptionContainer, DetailPageArrow, FeatureList, MainBackground, PreviewContainer,PreviewMask} from './HighlightCard.styles'
+import * as S from './HighlightCard.styles'
 import { GoArrowRight } from "react-icons/go";
 
 type HighlightCardProps = {
@@ -16,31 +16,31 @@ export default function HightlightCard ({title,period,contribution,features,back
   const navigate=useNavigate();
 
   return ( 
-    <CardContainer>
-      <PreviewContainer 
+    <S.CardContainer>
+      <S.PreviewContainer 
         onClick={() => navigate(`/work/${id}`)}
       >
-        <BlurBackground
+        <S.BlurBackground
           background={background}
           backColor={backColor}
         />
-        <MainBackground src={background}></MainBackground>
-        <PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" />
-        <DetailPageArrow>
+        <S.MainBackground src={background}></S.MainBackground>
+        <S.PreviewMask src="/assets/home/mask/workSectionMaskHid.svg" alt="" />
+        <S.DetailPageArrow>
           <GoArrowRight />
-        </DetailPageArrow>
-      </PreviewContainer>
-      <DescriptionContainer>
+        </S.DetailPageArrow>
+      </S.PreviewContainer>
+      <S.DescriptionContainer>
         <h3 >{title}</h3>
         <p><span className='font-bold'>기간 |</span> {period}</p>
         <p><span className='font-bold'>기여도 |</span> {contribution}</p>
         <p className='font-bold'>주요 기능</p>
-        <FeatureList>
+        <S.FeatureList>
           {features.map((feature, idx) => (
             <li key={idx}>{feature}</li>
           ))}
-        </FeatureList>
-      </DescriptionContainer>
-    </CardContainer>
+        </S.FeatureList>
+      </S.DescriptionContainer>
+    </S.CardContainer>
   )
 }

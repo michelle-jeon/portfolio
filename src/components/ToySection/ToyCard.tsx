@@ -1,15 +1,4 @@
-import {
-  CardBox,
-  CardContainer,
-  CardTitle,
-  CardDesc,
-  CardSkills,
-  SkillBadge,
-  CardLinkBox,
-  CardImage,
-  CardTextBox,
-  CardBottom,
-} from "./ToyCard.styles";
+import * as S from "./ToyCard.styles";
 
 interface ToyCardProps {
   title: string;
@@ -21,23 +10,23 @@ interface ToyCardProps {
 
 export default function ToyCard({ title, description, skills, image, link }: ToyCardProps) {
   return (
-    <CardContainer>
-      <CardLinkBox href={link} target="_blank" rel="noopener noreferrer">
-        <CardBox>
-          <CardImage src={image} alt={title} />
-          <CardBottom>
-            <CardTextBox>
-              <CardTitle>{title}</CardTitle>
-              <CardDesc>{description}</CardDesc>
-            </CardTextBox>
-            <CardSkills>
+    <S.CardContainer>
+      <S.CardLinkBox href={link} target="_blank" rel="noopener noreferrer">
+        <S.CardBox>
+          <S.CardImage src={image} alt={title} />
+          <S.CardBottom>
+            <S.CardTextBox>
+              <S.CardTitle>{title}</S.CardTitle>
+              <S.CardDesc>{description}</S.CardDesc>
+            </S.CardTextBox>
+            <S.CardSkills>
               {skills.map((skill, idx) => (
-                <SkillBadge key={idx}>{skill}</SkillBadge>
+                <S.SkillBadge key={idx}>{skill}</S.SkillBadge>
               ))}
-            </CardSkills>
-          </CardBottom>
-        </CardBox>
-      </CardLinkBox>
-    </CardContainer>
+            </S.CardSkills>
+          </S.CardBottom>
+        </S.CardBox>
+      </S.CardLinkBox>
+    </S.CardContainer>
   );
 }

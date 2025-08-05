@@ -1,4 +1,4 @@
-import { CardBox, CardImg, CardText, CardTitle, CardDesc } from "./SummaryCard.styles";
+import * as S from "./SummaryCard.styles";
 
 type SummaryCardProps = {
   img: string;
@@ -8,12 +8,12 @@ type SummaryCardProps = {
 
 export default function SummaryCard({ img, title, desc }: SummaryCardProps) {
   return (
-    <CardBox>
-      <CardImg src={img} alt={title} />
-      <CardText>
-        <CardTitle>{title}</CardTitle>
-        <CardDesc>{desc}</CardDesc>
-      </CardText>
-    </CardBox>
+    <S.CardBox>
+      <S.CardImg src={img} alt={title} />
+      <S.CardText>
+        <S.CardTitle>{title}</S.CardTitle>
+        <S.CardDesc>{desc}</S.CardDesc>
+      </S.CardText>
+    </S.CardBox>
   );
 }

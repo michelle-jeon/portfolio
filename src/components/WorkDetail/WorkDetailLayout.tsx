@@ -1,4 +1,4 @@
-import { Container, Content } from "./WorkDetailLayout.styles";
+import * as S from "./WorkDetailLayout.styles";
 import WorkDetailHeader from "./WorkDetailHeader";
 import WorkSteps from "./WorkSteps";
 import WorkDetailPhoneMockup from "./WorkDetailPhoneMockup";
@@ -33,7 +33,7 @@ export default function WorkDetailLayout({
   gif,
 }: Props) {
   return (
-    <Container>
+    <S.Container>
       <WorkDetailHeader
         title={title}
         period={period}
@@ -41,10 +41,10 @@ export default function WorkDetailLayout({
         apps={apps}
         description={description}
       />
-      <Content>
+      <S.Content>
         <WorkSteps steps={steps} />
         <WorkDetailPhoneMockup gif={gif} />
-      </Content>
-    </Container>
+      </S.Content>
+    </S.Container>
   );
 }

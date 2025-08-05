@@ -1,14 +1,4 @@
-import {
-  Container,
-  Left,
-  Back,
-  Title,
-  Meta,
-  Apps,
-  DescriptionList,
-  DescriptionItem,
-  ContainerInner,
-} from "./WorkDetailHeader.styles";
+import * as S from "./WorkDetailHeader.styles";
 
 type Props = {
   title: string;
@@ -26,27 +16,27 @@ export default function WorkDetailHeader({
   description,
 }: Props) {
   return (
-    <Container>
-      <ContainerInner>
-      <Left>
-        <Back>{"← Prev"}</Back>
-        <Title>{title}</Title>
-        <Meta>
+    <S.Container>
+      <S.ContainerInner>
+      <S.Left>
+        <S.Back>{"← Prev"}</S.Back>
+        <S.Title>{title}</S.Title>
+        <S.Meta>
           <span>{contribution}</span>
           <span>{period}</span>
-        </Meta>
-        <Apps>
+        </S.Meta>
+        <S.Apps>
           {apps.map((app, i) => (
             <span key={i}>{app}</span>
           ))}
-        </Apps>
-      </Left>
-      <DescriptionList>
+        </S.Apps>
+      </S.Left>
+      <S.DescriptionList>
         {description.map((line, i) => (
-          <DescriptionItem key={i}>{line}</DescriptionItem>
+          <S.DescriptionItem key={i}>{line}</S.DescriptionItem>
         ))}
-      </DescriptionList>
-      </ContainerInner>
-    </Container>
+      </S.DescriptionList>
+      </S.ContainerInner>
+    </S.Container>
   );
 }

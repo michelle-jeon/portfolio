@@ -1,19 +1,4 @@
-import {
-  AboutWrapper,
-  InfoBox,
-  Name,
-  ButtonGroup,
-  GrayButton,
-  Row,
-  Label,
-  Value,
-  DateText,
-  SkillList,
-  SkillItem,
-  PhotoWrapper,
-  Circle,
-  Photo,
-} from "./About.styles";
+import * as S from "./About.styles";
 
 import {
   FaReact,
@@ -31,60 +16,60 @@ import {
 
 export default function About() {
   return (
-    <AboutWrapper>
-      <InfoBox>
-        <Name>전미경 MIKYEONG JEON</Name>
-        <ButtonGroup>
+    <S.AboutWrapper>
+      <S.InfoBox>
+        <S.Name>전미경 MIKYEONG JEON</S.Name>
+        <S.ButtonGroup>
           {/* <GrayButton href="/assets/Jeon_Mikyeong_Resume.pdf" target="_blank" rel="noopener noreferrer">
             이력서
           </GrayButton> */}
-          <GrayButton href="https://github.com/michelle-jeon" target="_blank" rel="noopener noreferrer">
+          <S.GrayButton href="https://github.com/michelle-jeon" target="_blank" rel="noopener noreferrer">
             GitHub
-          </GrayButton>
-          <GrayButton href="https://tantail.tistory.com/" target="_blank" rel="noopener noreferrer">
+          </S.GrayButton>
+          <S.GrayButton href="https://tantail.tistory.com/" target="_blank" rel="noopener noreferrer">
             블로그
-          </GrayButton>
-        </ButtonGroup>
+          </S.GrayButton>
+        </S.ButtonGroup>
 
-        <Row>
-          <Label>졸업</Label>
-          <Value>숙명여자대학교 영문학사</Value>
-          <DateText></DateText>
-        </Row>
-        <Row>
-          <Label>수료</Label>
-          <Value>
+        <S.Row>
+          <S.Label>졸업</S.Label>
+          <S.Value>숙명여자대학교 영문학사</S.Value>
+          <S.DateText></S.DateText>
+        </S.Row>
+        <S.Row>
+          <S.Label>수료</S.Label>
+          <S.Value>
             이젠아카데미 웹 퍼블리셔 프론트엔드
-          </Value>
-          <DateText>2022.11 - 2023.04</DateText>
-        </Row>
-        <Row>
-          <Label>근무</Label>
-          <Value>
+          </S.Value>
+          <S.DateText>2022.11 - 2023.04</S.DateText>
+        </S.Row>
+        <S.Row>
+          <S.Label>근무</S.Label>
+          <S.Value>
             (주)널리소프트 개발팀 사원
-          </Value>
-          <DateText>2023.04 - 현재</DateText>
-        </Row>
-        <Row>
-          <Label>기술</Label>
-          <SkillList>
-            <SkillItem><FaReact /></SkillItem>
-            <SkillItem><SiTypescript /></SkillItem>
-            <SkillItem><SiJavascript /></SkillItem>
-            <SkillItem><SiCss3 /></SkillItem>
-            <SkillItem><SiHtml5 /></SkillItem>
-            <SkillItem><FaGitAlt /></SkillItem>
-            <SkillItem><FaSun /></SkillItem>
-            <SkillItem><FaFigma /></SkillItem>
-            <SkillItem><SiVercel /></SkillItem>
-          </SkillList>
-        </Row>
-      </InfoBox>
+          </S.Value>
+          <S.DateText>2023.04 - 현재</S.DateText>
+        </S.Row>
+        <S.Row>
+          <S.Label>기술</S.Label>
+          <S.SkillList>
+            <S.SkillItem><FaReact /></S.SkillItem>
+            <S.SkillItem><SiTypescript /></S.SkillItem>
+            <S.SkillItem><SiJavascript /></S.SkillItem>
+            <S.SkillItem><SiCss3 /></S.SkillItem>
+            <S.SkillItem><SiHtml5 /></S.SkillItem>
+            <S.SkillItem><FaGitAlt /></S.SkillItem>
+            <S.SkillItem><FaSun /></S.SkillItem>
+            <S.SkillItem><FaFigma /></S.SkillItem>
+            <S.SkillItem><SiVercel /></S.SkillItem>
+          </S.SkillList>
+        </S.Row>
+      </S.InfoBox>
 
-      <PhotoWrapper>
-        <Circle />
-        <Photo src="/assets/home/about/profile.png" alt="전미경 프로필" />
-      </PhotoWrapper>
-    </AboutWrapper>
+      <S.PhotoWrapper>
+        <S.Circle />
+        <S.Photo src="/assets/home/about/profile.png" alt="전미경 프로필" />
+      </S.PhotoWrapper>
+    </S.AboutWrapper>
   );
 }
