@@ -85,6 +85,10 @@ body {
   color:#FFA2B6;
 }
 
+.color_white {
+  color:#fff;
+}
+
 section.Homesection {
   width:100%;
   padding:50px 0;
@@ -95,7 +99,7 @@ section.Homesection.about{
 }
 
 section.Homesection.career {
-  /* background-color: #49DD9D; */
+  background-color: #CEDED7;
 }
 
 section.Homesection.personal{

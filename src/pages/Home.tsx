@@ -49,7 +49,7 @@ export default function Home(){
       {/* CAREER */}
       <section className='Homesection career' ref={careerRef}>
         <div className="sectionInner">
-          <SectionTitle className='color_neonGreen'>Career</SectionTitle>
+          <SectionTitle className='color_white'>Career</SectionTitle>
           <p className=''>널리소프트 2023.04 - 현재</p>
           <HightlightCard
             title="급여 서비스"
@@ -75,7 +75,7 @@ export default function Home(){
               '사용자 설문 수집',
               '신고 효율 증대를 위한 UI 개선'
             ]}
-            backColor='#fff'
+            backColor='#FF7436'
             background='/assets/home/work/highlightScreenshotSlc.png'
             id='labor'
           ></HightlightCard>
@@ -90,7 +90,7 @@ export default function Home(){
               '보안 기능 확대'
             ]}
             backColor='#fff'
-            background="/assets/home/work/highlightScreenshotRms.jpg"
+            background="/assets/home/work/highlightScreenshotRms.png"
             id='interview'
           ></HightlightCard>
           <div className="flex gap-6 w-full justify-between pt-20 pb-20">

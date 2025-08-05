@@ -8,7 +8,7 @@ export const CardContainer = styled.div`
 
 export const PreviewContainer = styled.div`
   position: relative;
-  flex: 1;
+  flex: 1.5;
   height: 300px;
   border-radius: 30px 30px 20px 30px;
   cursor: pointer;
@@ -63,7 +63,7 @@ export const DetailPageArrow = styled.span`
   position: absolute;
   bottom: 0;
   right: 0;
-  border:2px solid #49DD9D;
+  // border:2px solid #49DD9D;
   background-color: #fff;
   border-radius: 20px;
 z-index: 2;
