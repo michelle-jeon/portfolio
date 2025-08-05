@@ -8,14 +8,15 @@ type HeaderProps = {
 export default function Header({ onNavChange }: HeaderProps) {
   const navigations = [
     { name: 'HOME' },
-    { name: 'WORK' },
-    { name: 'TOY' },
+    { name: 'CAREER' },
+    { name: 'PERSONAL' },
     { name: 'CONTACT' },
   ];
 
   return (
     <HeaderWrapper>
-      <Title className="styled_font">MIGYUL</Title>
+      {/* <Title className="styled_font">MIGYUL</Title> */}
+      <p className='w-12 pt-4'><img src="/assets/logo.svg" alt="logo" /></p>
       <NavBar>
         {navigations.map((nav) => (
           <NavItem

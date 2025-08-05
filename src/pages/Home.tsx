@@ -9,16 +9,16 @@ import { useEffect } from 'react';
 
 const SectionTitle = styled.div`
   font-family: 'Sofachrome Rg', sans-serif;
-  font-size:48px;
+  font-size:36px;
   padding-top:50px;
 `
 
 export default function Home(){
-  const { homeRef, workRef, toyRef } =
+  const { homeRef, careerRef, personalRef } =
     useOutletContext<{
       homeRef: React.RefObject<HTMLElement>;
-      workRef: React.RefObject<HTMLElement>;
-      toyRef: React.RefObject<HTMLElement>;
+      careerRef: React.RefObject<HTMLElement>;
+      personalRef: React.RefObject<HTMLElement>;
     }>();
 
     useEffect(() => {
@@ -46,8 +46,8 @@ export default function Home(){
         </div>
       </section>
 
-      {/* WORK */}
-      <section className='Homesection' ref={workRef}>
+      {/* CAREER */}
+      <section className='Homesection career' ref={careerRef}>
         <div className="sectionInner">
           <SectionTitle className='color_neonGreen'>Career</SectionTitle>
           <p className=''>널리소프트 2023.04 - 현재</p>
@@ -113,8 +113,8 @@ export default function Home(){
         </div>
       </section>
 
-      {/* TOY */}
-      <section className='Homesection toy' ref={toyRef}>
+      {/* PERSONAL */}
+      <section className='Homesection personal' ref={personalRef}>
         <div className="sectionInner">
           <SectionTitle className='color_mypink'>Personal</SectionTitle>
           <ToyCard

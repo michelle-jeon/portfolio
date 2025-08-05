@@ -63,7 +63,8 @@ export const DetailPageArrow = styled.span`
   position: absolute;
   bottom: 0;
   right: 0;
-  background-color: #49DD9D;
+  border:2px solid #49DD9D;
+  background-color: #fff;
   border-radius: 20px;
 z-index: 2;
   display: flex;
@@ -80,7 +81,7 @@ z-index: 2;
   svg {
     width: 32px;
     height: 32px;
-    color: #fff; /* 화살표는 흰색으로 */
+    color: #49DD9D;
     transition: transform 0.3s ease;
     transform: rotate(-135deg);
   }

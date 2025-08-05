@@ -94,7 +94,11 @@ section.Homesection.about{
   background-color: #fff;
 }
 
-section.Homesection.toy{
+section.Homesection.career {
+  /* background-color: #49DD9D; */
+}
+
+section.Homesection.personal{
   background-color: #eee;
 }
 

@@ -10,8 +10,8 @@ export default function Root(){
   const location = useLocation();
 
   const homeRef = useRef<HTMLElement | null>(null);
-  const workRef = useRef<HTMLElement | null>(null);
-  const toyRef = useRef<HTMLElement | null>(null);
+  const careerRef = useRef<HTMLElement | null>(null);
+  const personalRef = useRef<HTMLElement | null>(null);
   const contactRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
@@ -25,8 +25,8 @@ export default function Root(){
 
     const refs: Record<string, React.RefObject<HTMLElement | null>> = {
       HOME: homeRef,
-      WORK: workRef,
-      TOY: toyRef,
+      CAREER: careerRef,
+      PERSONAL: personalRef,
       CONTACT: contactRef,
     };
 
@@ -51,8 +51,8 @@ export default function Root(){
       <Outlet 
         context={{
           homeRef,
-          workRef,
-          toyRef,
+          careerRef,
+          personalRef,
         }}
       />
       <section ref={contactRef}>
