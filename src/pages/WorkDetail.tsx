@@ -97,12 +97,11 @@ export default function WorkDetail() {
   const detail = workDetails[id as keyof typeof workDetails];
   if (!detail) return <div>Not Found</div>;
 
+  //as 'salary' | 'labor' | 'interview' 그러니까 as WorkId가 더 정확
   const idx = workOrder.indexOf(id as any);
 
   const prevId = workOrder[(idx - 1 + workOrder.length) % workOrder.length];
   const goPrev = () => prevId && navigate(`/work/${prevId}`);
-
-  if (!detail) return <div>Not Found</div>;
 
   return <WorkDetailLayout {...detail} onPrev={goPrev} />;
 }

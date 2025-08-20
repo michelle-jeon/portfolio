@@ -21,7 +21,7 @@ export default function WorkDetailHeader({
     <S.Container>
       <S.ContainerInner>
       <S.Left>
-        <S.Back as="button" onClick={onPrev}>{"← Prev"}</S.Back>
+        <S.Back onClick={onPrev}>{"← Prev"}</S.Back>
         <S.Title>{title}</S.Title>
         <S.Meta>
           <span>{contribution}</span>

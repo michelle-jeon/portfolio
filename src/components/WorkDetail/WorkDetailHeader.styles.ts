@@ -22,7 +22,7 @@ export const Left = styled.div`
   flex:1;
 `;
 
-export const Back = styled.div`
+export const Back = styled.button`
   font-size: 14px;
   cursor: pointer;
   text-align:left;
