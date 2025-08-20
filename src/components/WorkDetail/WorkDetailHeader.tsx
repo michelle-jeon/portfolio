@@ -6,6 +6,7 @@ type Props = {
   contribution: string;
   apps: string[];
   description: string[];
+  onPrev?: () => void;
 };
 
 export default function WorkDetailHeader({
@@ -14,12 +15,13 @@ export default function WorkDetailHeader({
   contribution,
   apps,
   description,
+  onPrev
 }: Props) {
   return (
     <S.Container>
       <S.ContainerInner>
       <S.Left>
-        <S.Back>{"← Prev"}</S.Back>
+        <S.Back as="button" onClick={onPrev}>{"← Prev"}</S.Back>
         <S.Title>{title}</S.Title>
         <S.Meta>
           <span>{contribution}</span>

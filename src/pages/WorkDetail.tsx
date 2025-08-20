@@ -1,5 +1,7 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import WorkDetailLayout from "../components/WorkDetail/WorkDetailLayout";
+// WorkDetail.tsx
+const workOrder = ['salary','labor','interview'] as const;
 
 const workDetails = {
   salary: {
@@ -89,10 +91,18 @@ const workDetails = {
 
 
 export default function WorkDetail() {
-  const { id } = useParams();
+  const { id = "" } = useParams();
+  const navigate = useNavigate();
+
   const detail = workDetails[id as keyof typeof workDetails];
+  if (!detail) return <div>Not Found</div>;
+
+  const idx = workOrder.indexOf(id as any);
+
+  const prevId = workOrder[(idx - 1 + workOrder.length) % workOrder.length];
+  const goPrev = () => prevId && navigate(`/work/${prevId}`);
 
   if (!detail) return <div>Not Found</div>;
 
-  return <WorkDetailLayout {...detail} />;
+  return <WorkDetailLayout {...detail} onPrev={goPrev} />;
 }

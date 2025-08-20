@@ -21,6 +21,7 @@ type Props = {
   description: string[];
   steps: StepSection[];
   gif: string;
+  onPrev?: () => void;
 };
 
 export default function WorkDetailLayout({
@@ -31,6 +32,7 @@ export default function WorkDetailLayout({
   description,
   steps,
   gif,
+  onPrev
 }: Props) {
   return (
     <S.Container>
@@ -40,6 +42,7 @@ export default function WorkDetailLayout({
         contribution={contribution}
         apps={apps}
         description={description}
+        onPrev={onPrev}
       />
       <S.Content>
         <WorkSteps steps={steps} />

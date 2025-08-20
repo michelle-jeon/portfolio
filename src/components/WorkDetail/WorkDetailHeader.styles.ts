@@ -25,6 +25,7 @@ export const Left = styled.div`
 export const Back = styled.div`
   font-size: 14px;
   cursor: pointer;
+  text-align:left;
 `;
 
 export const Title = styled.h1`
