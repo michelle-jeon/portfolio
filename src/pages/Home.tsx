@@ -126,6 +126,14 @@ export default function Home(){
           />
 
           <ToyCard
+            title="뭐 읽지?"
+            description=""
+            skills={['React', 'Next.js', 'Open API', 'CSS Module']}
+            image="/assets/home/toy/dummy-page-turner.png"
+            link=""
+          />
+
+          <ToyCard
             title="신입 포트폴리오"
             description="gsap 등을 이용한 인터렉티브 UI/UX, 클론 코딩, 교육 이수 과정"
             skills={['HTML', 'Javascript', 'CSS']}
