@@ -127,8 +127,8 @@ export default function Home(){
 
           <ToyCard
             title="뭐 읽지?"
-            description=""
-            skills={['React', 'Next.js', 'Open API', 'CSS Module']}
+            description="알라딘 open api로 간단한 도서 검색"
+            skills={['React', 'Next.js', 'Typescript', 'Open API', 'CSS Module']}
             image="/assets/home/toy/dummy-page-turner.png"
             link=""
           />
