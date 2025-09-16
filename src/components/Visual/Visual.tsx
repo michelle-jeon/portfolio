@@ -74,7 +74,7 @@ const [progress, setProgress] = useState(0);
             </S.GridItem>
           ))}
         </S.GridContainer>
-        <S.Updated>UPDATED 2025. 8. 5</S.Updated>
+        <S.Updated>UPDATED 2025. 9. 16</S.Updated>
       </S.StickyContainer>
     </S.VisualWrapper>
   );
