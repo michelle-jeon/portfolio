@@ -130,7 +130,7 @@ export default function Home(){
             description="알라딘 open api로 간단한 도서 검색"
             skills={['React', 'Next.js', 'Typescript', 'Open API', 'CSS Module']}
             image="/assets/home/toy/dummy-page-turner.png"
-            link=""
+            link="https://page-turner-happily-ever-after.vercel.app/"
           />
 
           <ToyCard
