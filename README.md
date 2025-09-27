@@ -18,7 +18,7 @@
 
 # Getting started
 ## 저장소 클론
-git clone https://github.com/your-username/portfolio.git
+git clone https://github.com/michelle-jeon/portfolio.git
 cd portfolio
 
 ## 패키지 설치
