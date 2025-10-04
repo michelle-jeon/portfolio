@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+const bp = {
+  tablet: "1024px",
+  mobile: "768px",
+  small: "480px",
+};
+
 export const CardContainer = styled.div`
   width: 100%;
   padding: 30px 0;
@@ -19,6 +25,12 @@ export const CardBox = styled.div`
   position: relative;
   &:hover img {
     transform: scale(1.0);
+  }
+  @media (max-width: ${bp.mobile}) {
+    width:100vw;
+  }
+  @media (max-width: ${bp.small}) {
+    
   }
 `;
 
